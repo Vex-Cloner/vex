@@ -1,2 +1,2 @@
 import upp
-upp.main()
+upp.menu()
