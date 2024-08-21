@@ -33,7 +33,7 @@ def check_python_architecture():
             arc = "64BIT"
             logging.info('64BIT DETECTED')
             logging.info('STARTING Luffy (vex64)')
-            import vex64 as Luffy
+            import upp64 as Luffy
         else:
             arc = "INVALID"
             logging.error('Unsupported architecture detected.')
