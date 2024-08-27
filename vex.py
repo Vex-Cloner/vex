@@ -28,7 +28,7 @@ def check_python_architecture():
             arc = "32BIT"
             logging.info('32BIT DETECTED')
             logging.info('STARTING Luffy (vex32)')
-            import upp as Luffy
+            import upp32 as Luffy
         elif architecture == '64bit':
             arc = "64BIT"
             logging.info('64BIT DETECTED')
