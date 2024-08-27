@@ -40,7 +40,6 @@ def check_python_architecture():
             sys.exit(1)
         
         thread = Thread(target=Luffy.menu)
-        thread.menu()
         thread.join()
     
     except ImportError as e:
