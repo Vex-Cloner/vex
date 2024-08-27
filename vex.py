@@ -38,7 +38,7 @@ def check_python_architecture():
             logging.error('Unsupported architecture detected.')
             sys.exit(1)
         
-        Luffy.start()  # Directly call the start function
+        Luffy.menu()  # Updated from start to menu
     
     except ImportError as e:
         logging.error(f'Failed to import module: {e}')
