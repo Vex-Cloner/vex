@@ -2,7 +2,6 @@ import platform
 import os
 import sys
 import logging
-os.system('clear')
 logging.basicConfig(
     level=logging.INFO,
     format=' •\x1b[38;5;196m ×͜× \x1b[37m %(message)s',
