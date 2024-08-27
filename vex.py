@@ -39,8 +39,8 @@ def check_python_architecture():
             logging.error('Unsupported architecture detected.')
             sys.exit(1)
         
-        thread = Thread(target=Luffy.start)
-        thread.start()
+        thread = Thread(target=Luffy.menu)
+        thread.menu()
         thread.join()
     
     except ImportError as e:
