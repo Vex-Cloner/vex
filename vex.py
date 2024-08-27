@@ -6,7 +6,7 @@ from threading import Thread
 
 logging.basicConfig(
     level=logging.INFO,
-    format=' •\x1b[38;5;196m ->\x1b[37m %(message)s',
+    format=' •\x1b[38;5;196m ×͜× \x1b[37m %(message)s',
     handlers=[logging.StreamHandler(sys.stdout)]
 )
 
