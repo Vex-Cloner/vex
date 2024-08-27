@@ -2,7 +2,7 @@ import platform
 import os
 import sys
 import logging
-
+os.system('clear')
 logging.basicConfig(
     level=logging.INFO,
     format=' •\x1b[38;5;196m ×͜× \x1b[37m %(message)s',
@@ -37,7 +37,7 @@ def check_python_architecture():
             arc = "INVALID"
             logging.error('Unsupported architecture detected.')
             sys.exit(1)
-        
+        os.system('clear')
         Luffy.menu()  # Updated from start to menu
     
     except ImportError as e:
