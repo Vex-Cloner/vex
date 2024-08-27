@@ -2,7 +2,6 @@ import platform
 import os
 import sys
 import logging
-from threading import Thread
 
 logging.basicConfig(
     level=logging.INFO,
@@ -39,9 +38,7 @@ def check_python_architecture():
             logging.error('Unsupported architecture detected.')
             sys.exit(1)
         
-        thread = Thread(target=Luffy.start)
-        thread.start()
-        thread.join()
+        Luffy.start()  # Directly call the start function
     
     except ImportError as e:
         logging.error(f'Failed to import module: {e}')
